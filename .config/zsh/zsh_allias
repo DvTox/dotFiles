@@ -34,6 +34,7 @@ alias abdA="abduco -e ^q -a"
 #################################GIT################################
 alias dots="/usr/bin/git --git-dir=$HOME/Documents/Workspace/dotfiles --work-tree=$HOME"
 alias dotsC="/usr/bin/git --git-dir=$HOME/Documents/Workspace/dotfiles --work-tree=$HOME commit -m "
+alias dotsA="/usr/bin/git --git-dir=$HOME/Documents/Workspace/dotfiles --work-tree=$HOME add"
 ####################################################################
 
 ###############################Python###############################
