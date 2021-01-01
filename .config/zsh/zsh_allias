@@ -55,7 +55,10 @@ alias htop="bashtop"
 #													   Utils										       #
 ############################################################################################################
 # === Editors ===
+# == VIM == #
 alias vim="nvim"
+alias vwiki="nvim $HOME/Documents/Workspace/Wiki/index.wiki"
+# == Others == #
 alias code="vscodium"
 # === Browsers ===
 #alias chromeium="chrome"
@@ -72,7 +75,6 @@ alias rlEnv="source $HOME/.config/env"
 alias e3="code ~/.config/i3/config"
 alias rl3="i3-msg reload"
 alias rs3="i3-msg restart"
-
 # == Polybar ==
 alias eBar="code $HOME/.config/polybar/config"
 # === Others ===
