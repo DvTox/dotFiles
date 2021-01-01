@@ -1,0 +1,10 @@
+#!/bin/zsh
+
+inp=$(abduco)
+title=$(echo $inp | cut -d $'\n' -f 1)
+running=$(echo $inp | cut -d $'\n' --complement -f 1)
+
+selected=$(echo $running | rofi -dmenu -p $title)
+
+session=$(echo $selected | awk -F ' ' '{print $NF}')
+alacritty --command abduco -e ^q -a $session

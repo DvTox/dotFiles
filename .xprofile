@@ -1,0 +1,8 @@
+#!/bin/zsh
+xrdb -load ~/.config/X11/xresources
+path+=('/home/coding/Documents/Workspace/UserScripts')
+export GOPATH=$HOME/Documents/Workspace/.go
+path+=($GOPATH/bin)
+spotifyd&
+nitrogen --restore &
+disown

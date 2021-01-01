@@ -1,0 +1,6 @@
+configuration {
+	modi: "window,run,ssh,drun";
+	font: "fontawesome 12";
+	terminal: "alacritty";
+}
+@import "/usr/share/rofi/themes/arthur.rasi"

@@ -1,0 +1,94 @@
+#!/bin/zsh
+
+############################################################################################################
+#														CD												   #
+############################################################################################################
+
+alias US="cd /home/coding/Documents/Workspace/UserScripts"
+alias cu="cd .."
+alias work="cd /home/coding/Documents/Workspace/Code"
+alias works="cd /home/coding/Documents/Workspace/"
+alias wiki="cd /home/coding/Documents/Workspace/Wiki"
+alias dwl="cd $HOME/Downloads"
+
+############################################################################################################
+#														LS												   #
+############################################################################################################
+alias ls="logo-ls -D"
+alias l1="logo-ls -1"
+alias ll="logo-ls -lshD"
+alias la="logo-ls -AshD"
+alias lS="logo-ls -SshD"
+
+############################################################################################################
+#													  abduco										       #
+############################################################################################################
+alias abd="abduco -e ^q"
+alias abdA="abduco -e ^q -a"
+
+
+############################################################################################################
+#													 Programing  										   #
+############################################################################################################
+
+#################################GIT################################
+alias dots="/usr/bin/git --git-dir=$HOME/Documents/Workspace/dotfiles --work-tree=$HOME"
+####################################################################
+
+###############################Python###############################
+alias pipo="pip"
+alias pip="pipenv"
+alias pips="pipenv shell"
+####################################################################
+
+
+
+############################################################################################################
+#													Taskmanager										       #
+############################################################################################################
+
+alias top="bashtop"
+#alias taskmanager="bashtop"
+alias htop="bashtop"
+
+############################################################################################################
+#													   Utils										       #
+############################################################################################################
+# === Editors ===
+alias vim="nvim"
+alias code="vscodium"
+# === Browsers ===
+#alias chromeium="chrome"
+#alias chrome="chrome"
+#alias browser="chrome"
+# === Configs ===
+# == ZSH ==
+alias ealias="code $HOME/.config/zsh/zsh_allias"
+alias rlalias="source $HOME/.config/zsh/zsh_allias"
+# == ENV ==
+alias eEnv="code $HOME/.config/env"
+alias rlEnv="source $HOME/.config/env"
+# == I3 ==
+alias e3="code ~/.config/i3/config"
+alias rl3="i3-msg reload"
+alias rs3="i3-msg restart"
+
+# == Polybar ==
+alias eBar="code $HOME/.config/polybar/config"
+# === Others ===
+#alias apps="anbox.appmgr"
+alias anbox-share="cd /var/snap/anbox/common/data/media/0"
+#alias calc="galculator"
+alias calc="abduco -e ^q -n calc calc"
+alias archey3="archey3 --config=~/.config/.archey3.cfg"
+alias picomConf="code ~/.config/i3/picom.conf"
+############################################################################################################
+#													 Fix Typos  										   #
+############################################################################################################
+# === Clear === #
+alias clar="clear"
+alias lear="clear"
+alias cear="clear"
+alias claer="clear"
+alias cealr="clear"
+alias clear+="clear"

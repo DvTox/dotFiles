@@ -1,0 +1,14 @@
+#!/bin/zsh
+setxkbmap de
+xrandr --output eDP --off --output HDMI-A-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DisplayPort-0 --off
+
+##################################
+#   abduco - Sessions
+##################################
+abduco -n startDev-barrier barrierConnect
+
+##################################
+#   TMUX - Sessions
+##################################
+#tmux new -s startDev-barrier -d
+#tmux send -t startDev-barrier barrierConnect ENTER
