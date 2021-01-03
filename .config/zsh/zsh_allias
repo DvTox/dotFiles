@@ -62,7 +62,7 @@ alias htop="bashtop"
 alias vim="nvim"
 alias vwiki="nvim $HOME/Documents/Workspace/Wiki/index.wiki"
 # == Others == #
-alias code="vscodium"
+alias vcode="vscodium"
 # === Browsers ===
 #alias chromeium="chrome"
 #alias chrome="chrome"
@@ -81,8 +81,6 @@ alias rs3="i3-msg restart"
 # == Polybar ==
 alias eBar="code $HOME/.config/polybar/config"
 # === Others ===
-#alias apps="anbox.appmgr"
-alias anbox-share="cd /var/snap/anbox/common/data/media/0"
 #alias calc="galculator"
 alias calc="abduco -e ^q -n calc calc"
 alias archey3="archey3 --config=~/.config/.archey3.cfg"
