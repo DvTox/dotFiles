@@ -1,0 +1,27 @@
+#!/bin/sh
+# Exit codes
+# - 233 - no valid flag given
+
+#Note remove the naming feature for cpp becuse of header dir
+
+dir="/home/coding/Documents/Workspace/.boilerplates/.default"
+cwd=$(pwd)
+if [ -z "$2" ];then
+set -- "$1" "$cwd"
+fi
+
+if [ "$1" = "-g" ] || [ "$1" = "--go" ] || [ "$1" = "--golang" ];then
+dir="/home/coding/Documents/Workspace/.boilerplates/golang"
+cp $dir "$cwd"/"$(echo "$2" | rev  | cut -d"/" -f 1 | rev)"
+else
+echo "No valid flags given Exiting. . ."
+exit 233
+fi
+
+
+
+
+#check if what exicuting dir is wen execution in antoer die 
+#adn spesfiening single word like main.go
+
+#cp $dir $2

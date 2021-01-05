@@ -38,6 +38,10 @@ alias dotsA="/usr/bin/git --git-dir=$HOME/Documents/Workspace/dotfiles --work-tr
 alias dotsPushM="/usr/bin/git --git-dir=$HOME/Documents/Workspace/dotfiles --work-tree=$HOME push origin main"
 ####################################################################
 
+#############################Boilerplates###########################
+alias qgo="boilerplate --golang "
+####################################################################
+
 ###############################Python###############################
 alias pipo="pip"
 alias pip="pipenv"
