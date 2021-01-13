@@ -6,6 +6,10 @@ xrandr --output eDP --off --output HDMI-A-0 --mode 1920x1080 --pos 0x0 --rotate 
 #   abduco - Sessions
 ##################################
 abduco -n startDev-barrier barrierConnect
+#abduco -n screensaver xscreensaver
+abduco -n guake guake --rename-tab="Spotify" --execute-command="spt"
+abduco -n devDocs devdocs-desktop
+
 
 ##################################
 #   TMUX - Sessions
