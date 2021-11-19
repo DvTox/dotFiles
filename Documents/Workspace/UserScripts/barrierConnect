@@ -1,2 +1,2 @@
 #!/bin/zsh
-barrierc -f --no-tray --debug INFO --name $HOST --enable-crypto IP.PlaceHolder:24800
+barrierc -f --no-tray --debug INFO --name $HOST --enable-crypto 192.168.188.28:24800

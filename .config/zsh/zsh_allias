@@ -73,6 +73,7 @@ alias vim="nvim"
 alias vwiki="nvim $HOME/Documents/Workspace/Wiki/index.wiki"
 # == Others == #
 alias vcode="vscodium"
+alias code="vscodium"
 # === Browsers ===
 #alias chromeium="chrome"
 #alias chrome="chrome"
@@ -95,6 +96,10 @@ alias eBar="code $HOME/.config/polybar/config"
 alias calc="abduco -e ^q -n calc calc"
 alias archey3="archey3 --config=~/.config/.archey3.cfg"
 alias picomConf="code ~/.config/i3/picom.conf"
+############################################################################################################
+#													    SSH          									   #
+############################################################################################################
+alias sshRaspy="abduco -e ^q -n xfceSSH xfce4-terminal --execute ssh pi@192.168.188.46"
 ############################################################################################################
 #													 Fix Typos  										   #
 ############################################################################################################

@@ -485,6 +485,10 @@ exec --no-startup-id conky -c ~/.config/i3/system-overview
 #Polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
+#User Stuff
+## Obisdian
+exec --no-startup-id obsidian-insider
+
 #####################################################################################################################
 #################                                 system applications                               #################
 #####################################################################################################################
@@ -523,7 +527,7 @@ bindsym $mod+Return exec --no-startup-id alacritty;focus
 #bindsym F12 exec --no-startup-id xfce4-terminal --drop-down; focus
 
 #System monitor
-bindsym control+Shift+Escape exec --no-startup-id xfce4-taskmanager;focus
+#bindsym control+Shift+Escape exec --no-startup-id xfce4-taskmanager;focus
 
 #settings
 bindsym control+mod1+m exec --no-startup-id xfce4-settings-manager
@@ -532,8 +536,8 @@ bindsym control+mod1+m exec --no-startup-id xfce4-settings-manager
 bindsym control+mod1+c exec --no-startup-id catfish;focus
 
 #arcolinux-logout
-bindsym control+mod1+k exec --no-startup-id arcolinux-logout
-bindsym control+mod1+l exec --no-startup-id arcolinux-logout
+#bindsym control+mod1+k exec --no-startup-id arcolinux-logout
+#bindsym control+mod1+l exec --no-startup-id arcolinux-logout
 
 #rofi theme selector
 bindsym control+mod1+r exec --no-startup-id rofi-theme-selector
@@ -670,11 +674,18 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="^Preferences$"] floating enable
 for_window [window_role="setup"] floating enable
 
+
 #################################################
 #                Custom Floating                #
 #################################################
 
 bindsym $mod+shift+c exec --no-startup-id uno-calculator floating
+#for_window [class="yakuake"] border none
+#for_window [title="yakuake"] border none
+for_window [class="yakuake"] floating enable
+for_window [title="yakuake"] floating enable
+
+
 
 
 #####################################################################################################################
@@ -871,7 +882,7 @@ mode "$mode_gaps_outer" {
 
  bindsym $mod+shift+w exec --no-startup-id nitrogen
  bindsym Print exec flameshot gui
-
+#bindsym $mod+BackSpace exec abducoMenu
  exec source "/home/coding/.config/env"
 
 #####################################################################################################################

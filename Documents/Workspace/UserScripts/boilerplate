@@ -13,6 +13,9 @@ fi
 if [ "$1" = "-g" ] || [ "$1" = "--go" ] || [ "$1" = "--golang" ];then
 dir="/home/coding/Documents/Workspace/.boilerplates/golang"
 cp $dir "$cwd"/"$(echo "$2" | rev  | cut -d"/" -f 1 | rev)"
+elif [ "$1" = "-cp" ] || [ "$1" = "-c++" ] || [ "$1" = "-cpp" ];then
+dir="/home/coding/Documents/Workspace/.boilerplates/c++/*"
+cp -r $dir "$cwd"/
 else
 echo "No valid flags given Exiting. . ."
 exit 233

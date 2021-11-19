@@ -312,3 +312,7 @@ ex ()
 
 source "$HOME/.config/zsh/zsh_allias"
 archey3 --config=~/.config/.archey3.cfg
+
+#go Get Privat Repo
+export GO111MODULE=on
+export GOPRIVATE=gitlab.com
