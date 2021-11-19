@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+pkexec reflector --save /etc/pacman.d/arcolinux-mirrorlist --country 'DE' --latest 7 --sort age
+exit 0
