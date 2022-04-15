@@ -1,4 +1,4 @@
 #!/bin/zsh
 
-pkexec reflector --save /etc/pacman.d/arcolinux-mirrorlist --country 'DE' --latest 7 --sort age
+pkexec reflector --save /etc/pacman.d/arcolinux-mirrorlist --country 'DE' --latest 7 --sort rate --protocol http
 exit 0
